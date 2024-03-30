@@ -1,0 +1,24 @@
+.friendContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friendName {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.friendStatus {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.valid {
+  color: green;
+}
+
+.inValid {
+  color: red;
+}
