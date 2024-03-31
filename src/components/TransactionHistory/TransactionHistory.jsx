@@ -1,20 +1,21 @@
 import TransactionsTRow from "../TransactionsTRow/TransactionsTRow";
+import css from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={css.tableContainer}>
       <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
+        <tr className={css.tableTitle}>
+          <th className={css.tableTitleText}>Amount</th>
+          <th className={css.tableTitleText}>Currency</th>
+          <th className={css.tableTitleText}>Type</th>
         </tr>
       </thead>
 
       <tbody>
         {items.map((item) => {
           return (
-            <tr key={item.id}>
+            <tr className={css.tableValue} key={item.id}>
               <TransactionsTRow item={item} />
             </tr>
           );

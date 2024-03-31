@@ -1,0 +1,25 @@
+.tableContainer {
+  margin: 50px;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.tableTitle {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.tableTitleText {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+.tableValue {
+  background-color: #d0d0d0;
+}
+
+.tableValue:nth-child(2n + 1) {
+  background-color: white;
+}
